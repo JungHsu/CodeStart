@@ -18,7 +18,7 @@ IFS="$OLD_IFS"
 echo "正在读取模板..."
 PROPERTY="@property (nonatomic, strong) @@CLASS@@   *@@OBJ@@;"
 LAZY_METHOD="- (@@CLASS@@ *)@@OBJ@@{
-    if (!@@OBJ@@) {
+    if (!_@@OBJ@@) {
         _@@OBJ@@ = [[@@CLASS@@ alloc]init];
     }
     return _@@OBJ@@;
